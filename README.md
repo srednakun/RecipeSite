@@ -27,7 +27,8 @@ It can be used in html files by writing bootstrap code. See "app.component.html"
 -"recipe.functions.ts"(located in src/app) - This file contains functions that you can use with recipes. <br>
 -"app.module.ts"- Updated to include "RecipeFunctions". <br>
 -"recipe.component.ts" - programming code goes here that you want to use with the front end. Written in typescript. This file specifially talks to "recipe.component.html"<br>
--"recipe.component.html" - the front end/ui of the recipes component.<br>
+-"recipe.component.html" - the front end/ui of the recipes component. Used for displaying recipes<br>
+- "add-recipe-form" components - used for the add new recipe form
 
 ## Sources
 Add Bootstrap to Project - https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/<br>
