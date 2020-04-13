@@ -9,19 +9,15 @@ import {Router} from '@angular/router';
 import {NgForm} from '@angular/forms';
 
 @Component({
-  selector: 'app-recipe',
-  templateUrl: './recipe.component.html',
-  styleUrls: ['./recipe.component.css']
+  selector: 'app-add-recipe-form',
+  templateUrl: './add-recipe-form.component.html',
+  styleUrls: ['./add-recipe-form.component.css']
 })
+export class AddRecipeFormComponent {
 
-export class RecipeComponent {
-
-  recipes: Recipe[] = [];
-
-  constructor(private reactFunctions: RecipeFunctions){}
+  constructor() { }
 
   ngOnInit(): void {
-  	//display default recipes
-  	this.recipes = this.reactFunctions.getAllRecipes();
-	}
+  }
+
 }

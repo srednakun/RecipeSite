@@ -1,1 +1,22 @@
-<p>recipe works!</p>
+
+<!--Show recipes here-->
+<div class="container">
+
+	<a *ngFor="let recipe of recipes">
+		<h4>{{recipe.name}}</h4>
+		<p>{{recipe.description}}</p>
+
+		<h5>Ingredients</h5>
+		<a *ngFor="let ingredient of recipe.ingredients">
+			<p>{{ingredient}}</p>
+		</a>
+		
+		<h5>Steps</h5>
+		<a *ngFor="let step of recipe.steps">
+			<p>{{step}}</p>
+		</a>
+		
+
+	</a>
+
+</div>

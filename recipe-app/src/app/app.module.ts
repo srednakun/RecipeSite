@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 //import recipe functions
 import { RecipeFunctions } from './recipe-functions';
 import { RecipeComponent } from './recipe/recipe.component';
+import { AddRecipeFormComponent } from './add-recipe-form/add-recipe-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeComponent
+    RecipeComponent,
+    AddRecipeFormComponent
   ],
   imports: [
     BrowserModule,

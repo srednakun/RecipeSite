@@ -6,7 +6,8 @@ export const RECIPES: Recipe[] = [
 
 {
 	name: 'Japanese Chicken Curry',
-	description: 'This delicious curry contains tender pieces of chicken, potatoes, and carrots. Serving is for 6-8 people.',
+	type: 'japanese',
+	description: 'This delicious chicken curry contains tender pieces of chicken, potatoes, and carrots.',
 	ingredients: ['4 cubes of mild Japanese curry roux', '5 cups of water', ' l lb chicken', '4 medium potatoes', 
 	' 1/2 cup carrots', ' 1/2 large sweet onion', 'salt, pepper, and garlic powder to taste'],
 	steps: ['1. Dice onion and cut chicken into bite sized pieces', 
@@ -25,6 +26,7 @@ export const RECIPES: Recipe[] = [
 
 {
 	name: 'Good Old Fashioned Pancakes',
+	type: 'american',
 	description: 'This is a great recipe that I found in my Grandma\'s recipe book. Judging from the weathered look of this recipe card, this was a family favorite.',
 	ingredients: ['1 1/2 cups all-purpose flour', '3 1/2 teaspoons baking powder', '1 teaspoon salt', '1 tablespoon white sugar',
 				'1 1/4 cups milk', '1 egg', '3 tablespoons butter, melted'],
