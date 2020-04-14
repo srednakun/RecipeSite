@@ -24,4 +24,8 @@ export class RecipeComponent {
   	//display default recipes
   	this.recipes = this.reactFunctions.getAllRecipes();
 	}
+
+	 arrayOne(n: number): any[] {
+    return Array(n);
+  }
 }

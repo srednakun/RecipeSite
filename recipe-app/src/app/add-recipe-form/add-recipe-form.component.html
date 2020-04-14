@@ -2,8 +2,8 @@
 <div class="container">
 
 	
-	<!--Need to add more stuff to form to make this work. Use contact list for example-->
-		<form>
+	<!--New recipe form-->
+		<form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
 			<div class="form-group">				
 			  <label for="name">Name:</label>
 			  <input name="name" ngModel type="text" class="form-control" id="name" required/><br>			

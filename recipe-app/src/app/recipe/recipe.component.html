@@ -12,11 +12,13 @@
 		</a>
 		
 		<h5>Steps</h5>
-		<a *ngFor="let step of recipe.steps">
-			<p>{{step}}</p>
-		</a>
-		
 
+		<ol>
+			<li *ngFor="let step of recipe.steps">
+				{{step}}
+			</li>
+		</ol>
+		
 	</a>
 
 </div>
