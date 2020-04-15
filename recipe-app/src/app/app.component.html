@@ -1,0 +1,18 @@
+
+
+<!--Main Page-->
+
+<div class="container">
+
+  <!--header-->
+  <h1 >Recipe Blog</h1>
+  <p>This paragraph is an introduction to the webpage. Here, the owner of the page will introduce themself and their blog. They will probably get way too personal for a recipe site, but hey, that's life. Maybe they will even mention people by name without telling who that person is. Such great mysteries await.</p>
+
+  <button (click)="ShowNewRecipeForm();">New Recipe</button>
+  <app-add-recipe-form *ngIf="showRecipeForm"></app-add-recipe-form>
+
+  <!--render the recipes component, "recipe.component.html" gets shown here-->
+  <!-- to render more components, use "app-", then name of the component-->
+  <app-recipe></app-recipe>
+
+</div>

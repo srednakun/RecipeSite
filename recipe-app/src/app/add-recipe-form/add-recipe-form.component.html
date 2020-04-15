@@ -1,0 +1,32 @@
+
+<div class="container">
+
+	
+	<!--New recipe form-->
+		<form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
+			<div class="form-group">				
+			  <label for="name">Name:</label>
+			  <input name="name" ngModel type="text" class="form-control" id="name" required/><br>			
+			</div>
+
+			<div class="form-group">			
+			  <label for="description">Description:</label>
+			  <textarea name="description" ngModel type="text" class="form-control" id="description" required></textarea> <br>		
+			</div>
+
+			<div class="form-group">			
+			  <label for="ingredients">Ingredients:</label>
+			  <textarea name="ingredients" ngModel type="text" class="form-control" id="ingredients" placeholder="Write each ingredient on a new line"required></textarea> <br>			
+			</div>
+
+			<div class="form-group">			
+			  <label for="steps">Steps:</label>
+			  <textarea name="steps" ngModel type="text" class="form-control" id="steps" placeholder="Write each step on a new line" required></textarea> <br>	
+			</div>
+
+			<button type="submit" id="addBtn">Add Recipe</button>
+	
+		</form>
+
+
+</div>
