@@ -1,0 +1,13 @@
+<!--Displays an input box and a button-->
+
+<div class="container">
+    
+    <form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm"> 
+    <div class="form-group">				
+			<label for="comment">New Comment</label>
+			<input name="comment" ngModel type="text" class="form-control" id="comment" placeholder="Write your comment here." required><br>			
+		</div>
+	
+        <button type="submit" id="commentBtn">Comment</button>
+    </form>
+</div>

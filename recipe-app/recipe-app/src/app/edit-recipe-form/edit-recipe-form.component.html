@@ -1,0 +1,34 @@
+<!--Displays input boxes and a button for editing a recipe-->
+<!--Credit to Sredna Kunowski for the format of this page-->
+
+<div class="container">
+
+	
+		<form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
+            
+			<div class="form-group">				
+			  <label for="name">Name:</label>
+			  <input name="name" ngModel type="text" class="form-control" id="name" placeholder={{recipe.name}} required><br>			
+			</div>
+
+			<div class="form-group">			
+			  <label for="description">Description:</label>
+			  <textarea name="description" ngModel type="text" class="form-control" id="description" placeholder={{recipe.description}} required></textarea> <br>		
+			</div>
+
+			<div class="form-group">			
+			  <label for="ingredients">Ingredients:</label>
+			  <textarea name="ingredients" ngModel type="text" class="form-control" id="ingredients" placeholder={{ingredientsAsString}} required></textarea> <br>			
+			</div>
+
+			<div class="form-group">			
+			  <label for="steps">Steps:</label>
+			  <textarea name="steps" ngModel type="text" class="form-control" id="steps" placeholder={{stepsAsString}} required></textarea> <br>	
+			</div>
+
+			<button type="submit" id="editBtn">Submit Edit</button>
+	
+		</form>
+
+
+</div>
