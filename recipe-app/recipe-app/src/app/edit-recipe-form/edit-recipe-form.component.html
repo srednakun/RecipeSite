@@ -4,7 +4,7 @@
 <div class="container">
 
 	
-		<form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
+		<form class="formMB" (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
             
 			<div class="form-group">				
 			  <label for="name">Name:</label>
@@ -26,7 +26,7 @@
 			  <textarea name="steps" ngModel type="text" class="form-control" id="steps" placeholder={{stepsAsString}} required></textarea> <br>	
 			</div>
 
-			<button type="submit" id="editBtn">Submit Edit</button>
+			<button class="btn btn-primary" type="submit" id="editBtn">Submit Edit</button>
 	
 		</form>
 
