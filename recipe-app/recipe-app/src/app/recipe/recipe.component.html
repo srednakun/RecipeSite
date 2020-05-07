@@ -2,29 +2,33 @@
 
 <div class="container">
 
-	<h4>{{recipe.name}}</h4>
-		<button (click)="ShowEditRecipeForm();">Edit Recipe</button>
-		<app-edit-recipe-form *ngIf="showEditRecipeForm" [recipe] = recipe></app-edit-recipe-form>
-		<p>{{recipe.description}}</p>
+	<div class="card">	
+		<h4 class="card-header">{{recipe.name}}</h4>
+		<div class="card-body">
+			<button class="btn-primary" (click)="ShowEditRecipeForm();">Edit Recipe</button>
+			<app-edit-recipe-form *ngIf="showEditRecipeForm" [recipe] = recipe></app-edit-recipe-form>
+			<p>{{recipe.description}}</p>
 
-		<h5>Ingredients</h5>
-		<a *ngFor="let ingredient of recipe.ingredients">
-			<p>{{ingredient}}</p>
-		</a>
+			<h5>Ingredients</h5>
+			<a *ngFor="let ingredient of recipe.ingredients">
+				<p>{{ingredient}}</p>
+			</a>
+			
+			<h5>Steps</h5>
+			<ol>
+				<li *ngFor="let step of recipe.steps">
+					{{step}}
+				</li>
+			</ol>
+
+			<h6>Comments</h6>
+			<ol>
+				<li *ngFor="let comment of recipe.comments">
+					{{comment}}
+				</li>
+			</ol>
 		
-		<h5>Steps</h5>
-		<ol>
-			<li *ngFor="let step of recipe.steps">
-				{{step}}
-			</li>
-		</ol>
-
-		<h6>Comments</h6>
-		<ol>
-			<li *ngFor="let comment of recipe.comments">
-				{{comment}}
-			</li>
-		</ol>
-	
-		<app-add-comment-form [recipe] = recipe></app-add-comment-form>
+			<app-add-comment-form [recipe] = recipe></app-add-comment-form>
+		<div>
+	</div>
 </div>

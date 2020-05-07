@@ -1,9 +1,9 @@
 
 <div class="container">
 
-	
+
 	<!--New recipe form-->
-		<form (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
+		<form class="formMB" (ngSubmit)="onSubmit(recipeForm)" #recipeForm="ngForm">
 			<div class="form-group">				
 			  <label for="name">Name:</label>
 			  <input name="name" ngModel type="text" class="form-control" id="name" required/><br>			
@@ -24,7 +24,7 @@
 			  <textarea name="steps" ngModel type="text" class="form-control" id="steps" placeholder="Write each step on a new line" required></textarea> <br>	
 			</div>
 
-			<button type="submit" id="addBtn">Add Recipe</button>
+			<button class="btn btn-success" type="submit" id="addBtn">Add Recipe</button>
 	
 		</form>
 
