@@ -56,4 +56,23 @@ export class RecipeFunctions {
 			}
 		}
 	}
+	
+	//deletes selected recipe from RECIPES array
+	deleteRecipe(currentRecipeName): void{
+
+		//loop through the list of recipes
+		for(var i = 0; i < RECIPES.length; i++){
+
+			//if the recipe in the list matches the name of the recipe we wish to delete...
+			if(RECIPES[i].name === currentRecipeName){
+				
+				//...then it deletes that recipe
+				// for(var j = i; j < RECIPES.length-1; j++){
+				// 	RECIPES[j] = RECIPES[j+1]
+				// }
+				// RECIPES[RECIPES.length - 1] = null;
+				RECIPES.splice(i,1)
+			}
+		}
+	}
 }

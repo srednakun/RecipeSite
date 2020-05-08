@@ -6,6 +6,7 @@
 		<h4 class="card-header">{{recipe.name}}</h4>
 		<div class="card-body">
 			<button class="btn-primary formMB" (click)="ShowEditRecipeForm();">Edit Recipe</button>
+			<button (click)="DeleteRecipe();">Delete Recipe</button>	
 			<app-edit-recipe-form *ngIf="showEditRecipeForm" [recipe] = recipe></app-edit-recipe-form>
 			<p>{{recipe.description}}</p>
 

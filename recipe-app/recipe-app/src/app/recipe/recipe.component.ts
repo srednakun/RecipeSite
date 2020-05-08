@@ -7,6 +7,8 @@ import { RecipeFunctions } from '../recipe-functions';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {NgForm} from '@angular/forms';
+import { RECIPES } from '../recipe-data';
+
 
 @Component({
   selector: 'app-recipe',
@@ -37,5 +39,9 @@ export class RecipeComponent {
   //causes the edit-recipe-form to be displayed on any one recipe component. This function is called when the Edit Recipe button is clicked on any recipe component.
   ShowEditRecipeForm(): void {
     this.showEditRecipeForm = true;
+  }
+  
+  DeleteRecipe(): void {
+    this.reactFunctions.deleteRecipe(this.recipe.name);
   }
 }
