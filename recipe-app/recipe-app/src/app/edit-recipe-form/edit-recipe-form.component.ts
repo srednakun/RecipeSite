@@ -43,7 +43,6 @@ export class EditRecipeFormComponent implements OnInit {
 	onSubmit(formInfo: NgForm){
 
 		//gets the recipe info from the form.
-		//ingredients and steps are taken as strings and must be formatted into an array. Credit to Srenda Kunowski.
 		var name = formInfo.value.name;
 		var description = formInfo.value.description;
 		var ingredients = formInfo.value.ingredients;

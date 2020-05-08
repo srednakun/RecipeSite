@@ -11,3 +11,7 @@
 .formMB{
 	margin-bottom: 2rem;
 }
+
+.right-float{
+	float: right;
+}

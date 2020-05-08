@@ -31,17 +31,6 @@ export class AddRecipeFormComponent {
 	*/
 	onSubmit(formInfo: NgForm){
 
-	//default values for testing purposes
-	// var name = "cereal";
-	// var description = "fruity pebbles are great";
-	// var ingredients: Array<string> = [" milk", "cereal"];
-	// var steps: Array<string>  = ["pour milk and cereal into bowl", "eat"];
-
-	// console.log("name: " + name);
-	// console.log("description: " + description);
-	// console.log("ingredients: " + ingredients);
-	// console.log("steps: " + steps);
-
 	//get recipe info from the user
 	var name = formInfo.value.name;
 	var description = formInfo.value.description;
@@ -55,7 +44,10 @@ export class AddRecipeFormComponent {
 	//add the new recipe to the list
 	this.recipeFunctions.addRecipe(name, description, ingredientsArray, stepsArray);
 
+	//hide the form
+	
 
-	  }
+	
+	}
 
 }
