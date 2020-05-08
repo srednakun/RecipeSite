@@ -49,7 +49,14 @@ export const RECIPES: Recipe[] = [
 			'Brown on both sides and serve hot. '],
 		comments: ["My favorite two things, old and fashioned."]
 
-	}//Paste new recipe format here
+	},//Paste new recipe format here
+	{
+	name: 'Chicago Style Pizza',
+	description: 'The best pizza!',
+	ingredients: ['1 lb pizza dough', '1 lb italian sausage', '2 cups shredded mozarella', '1 small onion', '2 tsp olive oil', '1 cup pizza sauce' ],
+	steps: [' Preheat oven to 350 degrees.', 'Place dough in pan and raise the edges to make it a deep dish shape.', 'Combine sausage and onions into a large skillet over medium heat.', 'Spoon sauce over dough along with sausage and cheese.', 'Brush olive oil over crust.', 'Bake for 25 minutes'],
+	comments: ['I like this recipe but next time I will add pepperoni and mushrooms.']
+}
 
 ]; 
 
